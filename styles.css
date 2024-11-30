@@ -1,0 +1,96 @@
+body{
+    background-color: #111827;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fdf4ff;
+    font-size: 35px;
+    border-bottom: solid 10px #14b8a6;
+    margin-top: 20px;
+    
+    
+}
+
+.container{
+    background-color: #030712;
+    align-items: center;
+    margin-left: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: 300px 300px 200px;
+    color: #fdf4ff;
+
+}
+
+.library{
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(3, 400px);
+    color: #fdf4ff;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    
+}
+
+.library *{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    border-left: 3px solid #f59e0b;
+    border-bottom: 3px solid #f59e0b;
+    color: #fdf4ff;
+}
+
+#new-book{
+    grid-column: 3;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 30px;
+    background-color: #14b8a6;
+    color: #fdf4ff;
+}
+
+.delete-book{
+    font-size: 14px;
+    background-color: red;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    margin-left: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    grid-column-start: 7;
+    grid-row-start: 2;
+    border: solid 2px #14b8a6;
+    padding:20px;
+}
+
+#submit{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5b21b6;
+    color: aliceblue;
+}
+
+.container > h1{
+    grid-column-start: 7;
+    margin-bottom: 100px;
+    
+}
