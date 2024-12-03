@@ -10,10 +10,10 @@
     <div class="header"><p>Welcome to Your Library!</p></div>
     <div class="container">
         <div class="library"></div>
-        <h1>Add a new Book:</h1>
-        <form>
+       
+        <form id="new-book-form" style="display: none;">
             <label for="book_name">Name of Book:</label>
-            <input type="text" id="book_name">
+            <input type="text" id="title">
 
             <label for="author">Author of the Book:</label>
             <input type="text" id="author">
@@ -32,8 +32,8 @@
         </form>
         
     </div>
-    
-    
+   
+        <div id="footer"><button id="new-book-btn">New Book</button></div>
     <script src="script.js"></script>
 </body>
 </html>

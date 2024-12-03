@@ -30,7 +30,7 @@ body{
 .library{
     display: grid;
     align-items: center;
-    grid-template-rows: repeat(4, 150px);
+    grid-template-rows: repeat(4, 100px);
     grid-template-columns: repeat(3, 400px);
     color: #fdf4ff;
     grid-row-start: 2;
@@ -38,15 +38,22 @@ body{
     
 }
 
-.library *{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin-left: 20px;
-    font-size: 16px;
-    border-left: 3px solid #f59e0b;
-    border-bottom: 3px solid #f59e0b;
-    color: #fdf4ff;
+.library > div{
+    gap: 20px;
+    color: #030712;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 2px solid #14b8a6;
+    border-radius: 5px;
+
+    
+}
+
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 #new-book{
@@ -64,11 +71,11 @@ body{
     width: 100px;
     border-radius: 10px;
     border: none;
-    height: 50px;
-    margin-left: 20px;
+    height: 30px;
+    
 }
 
-form{
+#new-book-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,4 +100,18 @@ form{
     grid-column-start: 7;
     margin-bottom: 100px;
     
+}
+
+#new-book-btn{
+    margin-top: 20px;
+    padding: 30px 100px;
+    background-color: #14b8a6;
+    border: none;
+    border-radius: 10px;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
